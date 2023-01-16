@@ -13,8 +13,19 @@ body {
 :root{
     --primary-color:#00BFA6;
     --gray-color:#a8a29e;
+    --off-white:#f1f5f9;
 }
 
+/* containers  */
+/* Note : The style which is written down in hirerchy will overide the one which written before it  */
+.container-center{
+    margin: auto;
+    max-width: 900px;
+}
+
+.container {
+    padding: 0rem 1rem;
+}
 /* Navigation  */
 
 .navigation{
@@ -28,6 +39,13 @@ body {
     text-align: right;
 }
 
+.navigation .nav-brand{
+    font-weight: bolder;
+}
+
+.navigation .link-active{
+  font-weight: bold;
+}
 /* container  */
 /* .container{
  padding: 0rem 1rem;
@@ -47,8 +65,28 @@ body {
 
 .link{
     text-decoration: none;
-    color: #ffff;
+    color: var(--off-white);
 }
+
+.link-primary{
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    display: block;
+    max-width: 150px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+}
+
+.link-secondary{
+    padding: 0.5rem;
+    display: block;
+    max-width: 150px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
 
 /* header  */
 
@@ -73,3 +111,37 @@ body {
 .hero .hero-heading .emp{
     color: var(--primary-color);
 }
+
+/* section  */
+
+.ow{
+ background-color: var(--off-white);
+}
+
+.section{
+    margin: 2rem 0rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.section h1{
+    text-align: center;
+    padding-bottom: 1rem;
+    
+}
+
+/* footer  */
+
+.footer{
+    background-color: var(--primary-color);
+    padding: 3rem;
+    text-align: center;
+    color: #fff;
+    border-top-right-radius: 1rem;
+}
+.footer-header{
+    font-size: large;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
